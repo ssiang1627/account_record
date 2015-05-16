@@ -1,0 +1,13 @@
+<h2>ＨＯＭＥ</h2>
+
+ <tbody>
+ <% @expenses.each do |expense| %>
+      <p>
+        <td>項目：<%= expense.title %></td>
+        <td>｜</td>
+        <td>金額：<%= expense.money %></td>
+      </p>  
+ <% end %>    
+ </tbody>   
+
+ <%= link_to "新增支出", new_expense_path %>
